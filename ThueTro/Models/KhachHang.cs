@@ -3,7 +3,7 @@
 namespace ThueTro.Models
 {
     public class KhachHang
-        {
+    {
         [Key]
         public int IDKH { get; set; }
         public string SDT { get; set; }

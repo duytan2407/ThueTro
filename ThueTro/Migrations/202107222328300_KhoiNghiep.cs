@@ -3,7 +3,7 @@ namespace ThueTro.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class KhoiTao : DbMigration
+    public partial class KhoiNghiep : DbMigration
     {
         public override void Up()
         {
@@ -40,9 +40,12 @@ namespace ThueTro.Migrations
                         GioiThieu = c.String(maxLength: 500),
                         Gia = c.String(maxLength: 50),
                         image = c.String(),
-                        IDQuan = c.String(),
+                        IDQuann = c.String(),
+                        diaDiem_IDQuan = c.String(maxLength: 128),
                     })
-                .PrimaryKey(t => t.IDNha);
+                .PrimaryKey(t => t.IDNha)
+                .ForeignKey("dbo.DiaDiems", t => t.diaDiem_IDQuan)
+                .Index(t => t.diaDiem_IDQuan);
             
             CreateTable(
                 "dbo.AspNetRoles",
@@ -120,12 +123,14 @@ namespace ThueTro.Migrations
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
+            DropForeignKey("dbo.NhaTroes", "diaDiem_IDQuan", "dbo.DiaDiems");
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
             DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
+            DropIndex("dbo.NhaTroes", new[] { "diaDiem_IDQuan" });
             DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.AspNetUserClaims");
             DropTable("dbo.AspNetUsers");

@@ -3,14 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ThueTro.Models;
+using ThueTro.ViewModel;
 
 namespace ThueTro.Controllers
 {
     public class HomeController : Controller
     {
+        private ApplicationDbContext dbcontext;
+        public HomeController()
+        {
+            dbcontext = new ApplicationDbContext();
+        }
         public ActionResult Index()
         {
-            return View();
+            var viewModel = new ModelQuan
+            {
+                DiaDiems = dbcontext.DiaDiems.ToList()
+            };
+            return View(viewModel);
         }
 
         public ActionResult About()
@@ -26,5 +37,6 @@ namespace ThueTro.Controllers
 
             return View();
         }
+
     }
 }

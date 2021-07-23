@@ -177,6 +177,22 @@
     <Compile Include="Migrations\202107222328300_KhoiNghiep.Designer.cs">
       <DependentUpon>202107222328300_KhoiNghiep.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107231846489_DataMoi.cs" />
+    <Compile Include="Migrations\202107231846489_DataMoi.Designer.cs">
+      <DependentUpon>202107231846489_DataMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107231851115_Datatesst.cs" />
+    <Compile Include="Migrations\202107231851115_Datatesst.Designer.cs">
+      <DependentUpon>202107231851115_Datatesst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107231857152_Datatesst123.cs" />
+    <Compile Include="Migrations\202107231857152_Datatesst123.Designer.cs">
+      <DependentUpon>202107231857152_Datatesst123.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107231859456_Datatesst123321.cs" />
+    <Compile Include="Migrations\202107231859456_Datatesst123321.Designer.cs">
+      <DependentUpon>202107231859456_Datatesst123321.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -199,6 +215,7 @@
     <Content Include="assets\fonts\LineIcons.svg" />
     <Content Include="assets\images\about\choose-left.jpg" />
     <Content Include="assets\images\call-action\cat-bg.jpg" />
+    <Content Include="assets\images\categories\1.svg" />
     <Content Include="assets\images\categories\car.svg" />
     <Content Include="assets\images\categories\controller.svg" />
     <Content Include="assets\images\categories\education.svg" />
@@ -218,6 +235,7 @@
     <Content Include="assets\images\clients\client5.svg" />
     <Content Include="assets\images\favicon.svg" />
     <Content Include="assets\images\hero\hero-bg.jpg" />
+    <Content Include="assets\images\hero\HomePage.jpg" />
     <Content Include="assets\images\items-grid\author-1.jpg" />
     <Content Include="assets\images\items-grid\author-2.jpg" />
     <Content Include="assets\images\items-grid\author-3.jpg" />
@@ -225,6 +243,7 @@
     <Content Include="assets\images\items-grid\author-5.jpg" />
     <Content Include="assets\images\items-grid\author-6.jpg" />
     <Content Include="assets\images\items-grid\feature-3.jpg" />
+    <Content Include="assets\images\items-grid\images_avatar.png" />
     <Content Include="assets\images\items-grid\img1.jpg" />
     <Content Include="assets\images\items-grid\img2.jpg" />
     <Content Include="assets\images\items-grid\img3.jpg" />
@@ -247,6 +266,31 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Imagess\PN1.png" />
+    <Content Include="Imagess\PN1_1.png" />
+    <Content Include="Imagess\PN1_2.png" />
+    <Content Include="Imagess\PN1_3.png" />
+    <Content Include="Imagess\PN1_4.png" />
+    <Content Include="Imagess\PN2_1.png" />
+    <Content Include="Imagess\PN2_2.png" />
+    <Content Include="Imagess\PN2_3.png" />
+    <Content Include="Imagess\PN2_4.png" />
+    <Content Include="Imagess\PN2_5.png" />
+    <Content Include="Imagess\PN3_1.png" />
+    <Content Include="Imagess\PN3_2.png" />
+    <Content Include="Imagess\PN3_3.png" />
+    <Content Include="Imagess\PN3_4.png" />
+    <Content Include="Imagess\PN3_5.png" />
+    <Content Include="Imagess\PN4_1.png" />
+    <Content Include="Imagess\PN4_2.png" />
+    <Content Include="Imagess\PN4_3.png" />
+    <Content Include="Imagess\PN4_4.png" />
+    <Content Include="Imagess\PN4_5.png" />
+    <Content Include="Imagess\PN5_1.png" />
+    <Content Include="Imagess\PN5_2.png" />
+    <Content Include="Imagess\PN5_3.png" />
+    <Content Include="Imagess\PN5_4.png" />
+    <Content Include="Imagess\PN5_5.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="assets\fonts\LineIcons.eot" />
@@ -317,6 +361,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202107222328300_KhoiNghiep.resx">
       <DependentUpon>202107222328300_KhoiNghiep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107231846489_DataMoi.resx">
+      <DependentUpon>202107231846489_DataMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107231851115_Datatesst.resx">
+      <DependentUpon>202107231851115_Datatesst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107231857152_Datatesst123.resx">
+      <DependentUpon>202107231857152_Datatesst123.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107231859456_Datatesst123321.resx">
+      <DependentUpon>202107231859456_Datatesst123321.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

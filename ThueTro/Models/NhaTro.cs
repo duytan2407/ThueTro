@@ -23,9 +23,10 @@ namespace ThueTro.Models
         [StringLength(50)]
         public string Gia { get; set; }
         public string image { get; set; }
-
+        public int ratting { get; set; }
         public DiaDiem diaDiem { get; set; }
         public string IDQuann { get; set; }
+        public DateTime DateTime { get; set; }
 
     }
 }

@@ -19,7 +19,12 @@ namespace ThueTro.Controllers
         {
             var viewModel = new ModelQuan
             {
-                DiaDiems = dbcontext.DiaDiems.ToList()
+                DiaDiems = dbcontext.DiaDiems.ToList(),
+
+                ListHomePage = dbcontext.NhaTros
+                .Take(6).ToList()
+
+                
             };
             return View(viewModel);
         }

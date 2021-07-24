@@ -11,7 +11,7 @@ namespace ThueTro.Migrations
                 "dbo.DiaDiems",
                 c => new
                     {
-                        IDQuan = c.String(nullable: false, maxLength: 128),
+                        IDQuan = c.Byte(nullable: false, identity: true),
                         TenQuan = c.String(maxLength: 50),
                     })
                 .PrimaryKey(t => t.IDQuan);
@@ -40,10 +40,12 @@ namespace ThueTro.Migrations
                         GioiThieu = c.String(maxLength: 500),
                         Gia = c.String(maxLength: 50),
                         image = c.String(),
-                        IDQuan = c.String(),
-                    })
-                .PrimaryKey(t => t.IDNha);
-            
+                        DiaDiemIdQuan = c.Byte(nullable: false),
+                })
+                .PrimaryKey(t => t.IDNha)
+                .ForeignKey("dbo.DiaDiems", t => t.DiaDiemIdQuan, cascadeDelete: true)
+                .Index(t => t.DiaDiemIdQuan);
+
             CreateTable(
                 "dbo.AspNetRoles",
                 c => new

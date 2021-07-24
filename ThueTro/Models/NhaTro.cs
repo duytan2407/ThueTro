@@ -11,6 +11,7 @@ namespace ThueTro.Models
         [Key]
         public int IDNha { get; set; }
         [StringLength(500)]
+        
         public string Tenduong { get; set; }
         public string DienTich { get; set; }
         [StringLength(50)]

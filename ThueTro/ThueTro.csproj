@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -112,12 +118,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
@@ -170,6 +170,8 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NhaTroesController.cs" />
+    <Compile Include="Controllers\timThueeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -303,6 +305,20 @@
     <Content Include="Imagess\PN5_3.png" />
     <Content Include="Imagess\PN5_4.png" />
     <Content Include="Imagess\PN5_5.png" />
+    <Content Include="Imagess\q1\hinh10.jpg" />
+    <Content Include="Imagess\q1\hinh11.jpg" />
+    <Content Include="Imagess\q1\hinh12.jpg" />
+    <Content Include="Imagess\q1\hinh13.jpg" />
+    <Content Include="Imagess\q1\hinh14.jpg" />
+    <Content Include="Imagess\q1\hinh6.jpg" />
+    <Content Include="Imagess\q1\hinh7.jpg" />
+    <Content Include="Imagess\q1\hinh8.jpg" />
+    <Content Include="Imagess\q1\hinh9.jpg" />
+    <Content Include="Imagess\q1\q1hinh1.jpg" />
+    <Content Include="Imagess\q1\q1hinh2.jpg" />
+    <Content Include="Imagess\q1\q1hinh3.jpg" />
+    <Content Include="Imagess\q1\q1hinh4.jpg" />
+    <Content Include="Imagess\q1\q1hinh5.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="assets\fonts\LineIcons.eot" />
@@ -355,7 +371,16 @@
     <Content Include="Views\Shared\HomePage.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Account\Register.cshtml" />
+=======
+    <Content Include="Views\timThuee\TimThue.cshtml" />
+    <Content Include="Views\NhaTroes\Create.cshtml" />
+    <Content Include="Views\NhaTroes\Delete.cshtml" />
+    <Content Include="Views\NhaTroes\Details.cshtml" />
+    <Content Include="Views\NhaTroes\Edit.cshtml" />
+    <Content Include="Views\NhaTroes\Index.cshtml" />
+>>>>>>> 3a3419c9731c9ae29f566e713767714696a9f922
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

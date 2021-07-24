@@ -170,6 +170,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TimThueController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -201,6 +202,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="image\Quan1\hinh10.jpg" />
+    <Content Include="image\Quan1\hinh11.jpg" />
+    <Content Include="image\Quan1\hinh12.jpg" />
+    <Content Include="image\Quan1\hinh13.jpg" />
+    <Content Include="image\Quan1\hinh14.jpg" />
+    <Content Include="image\Quan1\hinh6.jpg" />
+    <Content Include="image\Quan1\hinh7.jpg" />
+    <Content Include="image\Quan1\hinh8.jpg" />
+    <Content Include="image\Quan1\hinh9.jpg" />
+    <Content Include="image\Quan1\q1hinh1.jpg" />
+    <Content Include="image\Quan1\q1hinh2.jpg" />
+    <Content Include="image\Quan1\q1hinh3.jpg" />
+    <Content Include="image\Quan1\q1hinh4.jpg" />
+    <Content Include="image\Quan1\q1hinh5.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -251,6 +266,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\TimThue\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

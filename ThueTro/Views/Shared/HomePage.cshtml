@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>ClassiGrids - Classified Ads and Listing Website Template.</title>
+    <title>Five Brothers Hood</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
@@ -43,7 +43,7 @@
                     <div class="nav-inner">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/logo/logo.svg" alt="Logo">
+                                <img src="~/assets/images/logo/12.png" alt="Logo">
                             </a>
                             <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -59,32 +59,32 @@
                                            data-bs-toggle="collapse" data-bs-target="#submenu-1-1"
                                            aria-controls="navbarSupportedContent" aria-expanded="false"
                                            aria-label="Toggle navigation">Home</a>
-                                       
+
                                     </li>
                                     <li class="nav-item">
                                         <a href="javascript:void(0)" aria-label="Toggle navigation">Categories</a>
                                     </li>
-                                    
+
                                     <li class="nav-item">
                                         <a class=" dd-menu collapsed" href="javascript:void(0)"
                                            data-bs-toggle="collapse" data-bs-target="#submenu-1-4"
                                            aria-controls="navbarSupportedContent" aria-expanded="false"
                                            aria-label="Toggle navigation">Pages</a>
-                                       
+
                                     </li>
                                     <li class="nav-item">
                                         <a class=" dd-menu collapsed" href="javascript:void(0)"
                                            data-bs-toggle="collapse" data-bs-target="#submenu-1-5"
                                            aria-controls="navbarSupportedContent" aria-expanded="false"
                                            aria-label="Toggle navigation">Blog</a>
-                                       
+
                                     </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
                             <div class="login-button">
                                 <ul>
                                     <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-                                    
+
                                     <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
                                 </ul>
                             </div>
@@ -98,6 +98,7 @@
         </div> <!-- container -->
     </header>
     @RenderBody()
+    @RenderSection("scripts", required: false)
     <footer class="footer">
         <!-- Start Footer Top -->
         <div class="footer-top">
@@ -258,3 +259,4 @@
     </script>
 
 </body>
+</html>

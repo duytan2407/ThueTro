@@ -210,6 +210,7 @@
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\glightbox.min.css" />
     <Content Include="assets\css\LineIcons.2.0.css" />
+    <Content Include="assets\css\main2.css" />
     <Content Include="assets\css\main.css" />
     <Content Include="assets\css\tiny-slider.css" />
     <Content Include="assets\fonts\LineIcons.svg" />
@@ -250,6 +251,8 @@
     <Content Include="assets\images\items-grid\img4.jpg" />
     <Content Include="assets\images\items-grid\img5.jpg" />
     <Content Include="assets\images\items-grid\img6.jpg" />
+    <Content Include="assets\images\logo\12.png" />
+    <Content Include="assets\images\logo\21.png" />
     <Content Include="assets\images\logo\logo.svg" />
     <Content Include="assets\images\newsletter\newsletter-bg.png" />
     <Content Include="assets\js\bootstrap.min.js" />
@@ -325,7 +328,6 @@
     <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
     <Content Include="Views\Account\ForgotPassword.cshtml" />
     <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\ResetPassword.cshtml" />
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
@@ -341,6 +343,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\HomePage.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

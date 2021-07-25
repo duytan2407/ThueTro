@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -112,12 +118,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
@@ -170,6 +170,8 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NhaTroesController.cs" />
+    <Compile Include="Controllers\timThueeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -192,6 +194,10 @@
     <Compile Include="Migrations\202107231859456_Datatesst123321.cs" />
     <Compile Include="Migrations\202107231859456_Datatesst123321.Designer.cs">
       <DependentUpon>202107231859456_Datatesst123321.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107251622291_newDBNhaTros.cs" />
+    <Compile Include="Migrations\202107251622291_newDBNhaTros.Designer.cs">
+      <DependentUpon>202107251622291_newDBNhaTros.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -265,41 +271,72 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrap\mixins\_border-radius.css" />
+    <Content Include="css\bootstrap\mixins\_resize.css" />
+    <Content Include="css\bootstrap\mixins\_screen-reader.css" />
+    <Content Include="css\bootstrap\mixins\_transition.css" />
+    <Content Include="css\bootstrap\mixins\_visibility.css" />
+    <Content Include="css\bootstrap\utilities\_stretched-link.css" />
+    <Content Include="css\bootstrap\_media.css" />
+    <Content Include="css\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Imagess\PN1.png" />
-    <Content Include="Imagess\PN1_1.png" />
-    <Content Include="Imagess\PN1_2.png" />
-    <Content Include="Imagess\PN1_3.png" />
-    <Content Include="Imagess\PN1_4.png" />
-    <Content Include="Imagess\PN2_1.png" />
-    <Content Include="Imagess\PN2_2.png" />
-    <Content Include="Imagess\PN2_3.png" />
-    <Content Include="Imagess\PN2_4.png" />
-    <Content Include="Imagess\PN2_5.png" />
-    <Content Include="Imagess\PN3_1.png" />
-    <Content Include="Imagess\PN3_2.png" />
-    <Content Include="Imagess\PN3_3.png" />
-    <Content Include="Imagess\PN3_4.png" />
-    <Content Include="Imagess\PN3_5.png" />
-    <Content Include="Imagess\PN4_1.png" />
-    <Content Include="Imagess\PN4_2.png" />
-    <Content Include="Imagess\PN4_3.png" />
-    <Content Include="Imagess\PN4_4.png" />
-    <Content Include="Imagess\PN4_5.png" />
-    <Content Include="Imagess\PN5_1.png" />
-    <Content Include="Imagess\PN5_2.png" />
-    <Content Include="Imagess\PN5_3.png" />
-    <Content Include="Imagess\PN5_4.png" />
-    <Content Include="Imagess\PN5_5.png" />
+    <Content Include="Imagess\Luanne\q1\hinh10.jpg" />
+    <Content Include="Imagess\Luanne\q1\hinh11.jpg" />
+    <Content Include="Imagess\Luanne\q1\hinh12.jpg" />
+    <Content Include="Imagess\Luanne\q1\hinh13.jpg" />
+    <Content Include="Imagess\Luanne\q1\hinh14.jpg" />
+    <Content Include="Imagess\Luanne\q1\hinh6.jpg" />
+    <Content Include="Imagess\Luanne\q1\hinh7.jpg" />
+    <Content Include="Imagess\Luanne\q1\hinh8.jpg" />
+    <Content Include="Imagess\Luanne\q1\hinh9.jpg" />
+    <Content Include="Imagess\Luanne\q1\q1hinh1.jpg" />
+    <Content Include="Imagess\Luanne\q1\q1hinh2.jpg" />
+    <Content Include="Imagess\Luanne\q1\q1hinh3.jpg" />
+    <Content Include="Imagess\Luanne\q1\q1hinh4.jpg" />
+    <Content Include="Imagess\Luanne\q1\q1hinh5.jpg" />
+    <Content Include="Imagess\Luanne\q2\n1h1.jpg" />
+    <Content Include="Imagess\Luanne\q2\n1h2.jpg" />
+    <Content Include="Imagess\Luanne\q2\n1h3.jpg" />
+    <Content Include="Imagess\Luanne\q2\n2h1.jpg" />
+    <Content Include="Imagess\Luanne\q2\n2h2.jpg" />
+    <Content Include="Imagess\Luanne\q2\n2h3.jpg" />
+    <Content Include="Imagess\Luanne\q2\n3h1.jpg" />
+    <Content Include="Imagess\Luanne\q2\n3h2.jpg" />
+    <Content Include="Imagess\Luanne\q2\n3h3.jpg" />
+    <Content Include="Imagess\Luanne\q2\n4h1.jpg" />
+    <Content Include="Imagess\Luanne\q2\n4h2.jpg" />
+    <Content Include="Imagess\Luanne\q2\n4h3.jpg" />
+    <Content Include="Imagess\Luanne\q2\n5h1.jpg" />
+    <Content Include="Imagess\Luanne\q2\n5h2.jpg" />
+    <Content Include="Imagess\Luanne\q2\n5h3.jpg" />
+    <Content Include="Imagess\Luanne\q3\n1h1.jpg" />
+    <Content Include="Imagess\Luanne\q3\n1h2.jpg" />
+    <Content Include="Imagess\Luanne\q3\n1h3.jpg" />
+    <Content Include="Imagess\Luanne\q3\n2h1.jpg" />
+    <Content Include="Imagess\Luanne\q3\n2h2.jpg" />
+    <Content Include="Imagess\Luanne\q3\n2h3.jpg" />
+    <Content Include="Imagess\Luanne\q3\n3h1.jpg" />
+    <Content Include="Imagess\Luanne\q3\n3h2.jpg" />
+    <Content Include="Imagess\Luanne\q3\n3h3.jpg" />
+    <Content Include="Imagess\Luanne\q3\n4h1.jpg" />
+    <Content Include="Imagess\Luanne\q3\n4h2.jpg" />
+    <Content Include="Imagess\Luanne\q3\n4h3.jpg" />
+    <Content Include="Imagess\Luanne\q3\n5h1.jpg" />
+    <Content Include="Imagess\Luanne\q3\n5h2.jpg" />
+    <Content Include="Imagess\Luanne\q3\n5h3.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="assets\fonts\LineIcons.eot" />
     <Content Include="assets\fonts\LineIcons.ttf" />
     <Content Include="assets\fonts\LineIcons.woff" />
     <Content Include="assets\fonts\LineIcons.woff2" />
+    <Content Include="css\.DS_Store" />
+    <Content Include="css\bootstrap\.DS_Store" />
+    <Content Include="css\bootstrap\mixins\.DS_Store" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -328,7 +365,6 @@
     <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
     <Content Include="Views\Account\ForgotPassword.cshtml" />
     <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\ResetPassword.cshtml" />
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Account\SendCode.cshtml" />
@@ -344,9 +380,17 @@
     <Content Include="Views\Shared\HomePage.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\timThuee\TimThue.cshtml" />
+    <Content Include="Views\NhaTroes\Create.cshtml" />
+    <Content Include="Views\NhaTroes\Delete.cshtml" />
+    <Content Include="Views\NhaTroes\Details.cshtml" />
+    <Content Include="Views\NhaTroes\Edit.cshtml" />
+    <Content Include="Views\NhaTroes\Index.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Imagess\Duong\qgovap\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -376,6 +420,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107231859456_Datatesst123321.resx">
       <DependentUpon>202107231859456_Datatesst123321.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107251622291_newDBNhaTros.resx">
+      <DependentUpon>202107251622291_newDBNhaTros.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

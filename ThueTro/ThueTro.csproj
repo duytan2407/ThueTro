@@ -190,9 +190,9 @@
     <Compile Include="Migrations\202107191502166_DuLieu.Designer.cs">
       <DependentUpon>202107191502166_DuLieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202107230822179_sss.cs" />
-    <Compile Include="Migrations\202107230822179_sss.Designer.cs">
-      <DependentUpon>202107230822179_sss.cs</DependentUpon>
+    <Compile Include="Migrations\202107251553587_sds.cs" />
+    <Compile Include="Migrations\202107251553587_sds.Designer.cs">
+      <DependentUpon>202107251553587_sds.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -206,6 +206,61 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\glightbox.min.css" />
+    <Content Include="assets\css\LineIcons.2.0.css" />
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\css\main2.css" />
+    <Content Include="assets\css\tiny-slider.css" />
+    <Content Include="assets\fonts\LineIcons.svg" />
+    <Content Include="assets\images\about\choose-left.jpg" />
+    <Content Include="assets\images\call-action\cat-bg.jpg" />
+    <Content Include="assets\images\categories\1.svg" />
+    <Content Include="assets\images\categories\car.svg" />
+    <Content Include="assets\images\categories\controller.svg" />
+    <Content Include="assets\images\categories\education.svg" />
+    <Content Include="assets\images\categories\furniture.svg" />
+    <Content Include="assets\images\categories\hospital.svg" />
+    <Content Include="assets\images\categories\jobs.svg" />
+    <Content Include="assets\images\categories\laptop.svg" />
+    <Content Include="assets\images\categories\matrimony.svg" />
+    <Content Include="assets\images\categories\real-estate.svg" />
+    <Content Include="assets\images\categories\travel.svg" />
+    <Content Include="assets\images\categories\tshirt.svg" />
+    <Content Include="assets\images\categories\watch.svg" />
+    <Content Include="assets\images\clients\client1.svg" />
+    <Content Include="assets\images\clients\client2.svg" />
+    <Content Include="assets\images\clients\client3.svg" />
+    <Content Include="assets\images\clients\client4.svg" />
+    <Content Include="assets\images\clients\client5.svg" />
+    <Content Include="assets\images\favicon.svg" />
+    <Content Include="assets\images\hero\hero-bg.jpg" />
+    <Content Include="assets\images\hero\HomePage.jpg" />
+    <Content Include="assets\images\items-grid\author-1.jpg" />
+    <Content Include="assets\images\items-grid\author-2.jpg" />
+    <Content Include="assets\images\items-grid\author-3.jpg" />
+    <Content Include="assets\images\items-grid\author-4.jpg" />
+    <Content Include="assets\images\items-grid\author-5.jpg" />
+    <Content Include="assets\images\items-grid\author-6.jpg" />
+    <Content Include="assets\images\items-grid\feature-3.jpg" />
+    <Content Include="assets\images\items-grid\images_avatar.png" />
+    <Content Include="assets\images\items-grid\img1.jpg" />
+    <Content Include="assets\images\items-grid\img2.jpg" />
+    <Content Include="assets\images\items-grid\img3.jpg" />
+    <Content Include="assets\images\items-grid\img4.jpg" />
+    <Content Include="assets\images\items-grid\img5.jpg" />
+    <Content Include="assets\images\items-grid\img6.jpg" />
+    <Content Include="assets\images\logo\12.png" />
+    <Content Include="assets\images\logo\21.png" />
+    <Content Include="assets\images\logo\logo.svg" />
+    <Content Include="assets\images\newsletter\newsletter-bg.png" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\count-up.min.js" />
+    <Content Include="assets\js\glightbox.min.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\tiny-slider.js" />
+    <Content Include="assets\js\wow.min.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -223,6 +278,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="assets\fonts\LineIcons.eot" />
+    <Content Include="assets\fonts\LineIcons.ttf" />
+    <Content Include="assets\fonts\LineIcons.woff" />
+    <Content Include="assets\fonts\LineIcons.woff2" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -297,8 +356,8 @@
     <EmbeddedResource Include="Migrations\202107191502166_DuLieu.resx">
       <DependentUpon>202107191502166_DuLieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202107230822179_sss.resx">
-      <DependentUpon>202107230822179_sss.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202107251553587_sds.resx">
+      <DependentUpon>202107251553587_sds.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

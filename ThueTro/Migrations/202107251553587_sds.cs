@@ -3,17 +3,15 @@ namespace ThueTro.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class sss : DbMigration
+    public partial class sds : DbMigration
     {
         public override void Up()
         {
-
 
         }
         
         public override void Down()
         {
-
         }
     }
 }

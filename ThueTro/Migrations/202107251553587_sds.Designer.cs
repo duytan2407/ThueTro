@@ -7,13 +7,13 @@ namespace ThueTro.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class sss : IMigrationMetadata
+    public sealed partial class sds : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(sss));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(sds));
         
         string IMigrationMetadata.Id
         {
-            get { return "202107230822179_sss"; }
+            get { return "202107251553587_sds"; }
         }
         
         string IMigrationMetadata.Source

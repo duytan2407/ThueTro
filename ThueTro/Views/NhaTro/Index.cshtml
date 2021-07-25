@@ -1,5 +1,5 @@
 ﻿
-@using ThueTro.Models;
+@*@using ThueTro.Models;*@
 @using PagedList.Mvc;
 @model PagedList.PagedList<ThueTro.Models.NhaTro>
 
@@ -83,11 +83,11 @@
             </td>
             <td>
                 <button style="width: 95px" type="button" class="btn btn-warning" onclick="location.href = '@Url.Action("Edit", "NhaTro", new { id = item.IDNha })';return false;"><span style="margin-right: 5px" class="glyphicon glyphicon-pencil"></span>Sửa</button>
-                --------------------
                 <br />
+                --------------------                
                 <button style="width: 95px" type="button" class="btn btn-info" onclick="location.href = '@Url.Action("Details", "NhaTro", new { id = item.IDNha })';return false;"><span style="margin-right: 5px" class="glyphicon glyphicon-align-justify"></span>Chi tiết</button>
-                --------------------
                 <br />
+                --------------------               
                 <button style="width: 95px" type="button" class="btn btn-danger" onclick="location.href = '@Url.Action("Delete", "NhaTro", new { id = item.IDNha })' ;return false;"><span style="margin-right: 5px" class="glyphicon glyphicon-trash"></span>Xóa</button>
             </td>
         </tr>

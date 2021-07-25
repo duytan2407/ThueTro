@@ -195,6 +195,10 @@
     <Compile Include="Migrations\202107231859456_Datatesst123321.Designer.cs">
       <DependentUpon>202107231859456_Datatesst123321.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107251622291_newDBNhaTros.cs" />
+    <Compile Include="Migrations\202107251622291_newDBNhaTros.Designer.cs">
+      <DependentUpon>202107251622291_newDBNhaTros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -381,6 +385,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Imagess\Duong\qgovap\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -410,6 +415,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107231859456_Datatesst123321.resx">
       <DependentUpon>202107231859456_Datatesst123321.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107251622291_newDBNhaTros.resx">
+      <DependentUpon>202107251622291_newDBNhaTros.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

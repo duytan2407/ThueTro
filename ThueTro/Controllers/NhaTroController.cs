@@ -16,15 +16,24 @@ namespace ThueTro.Controllers
     public class NhaTroController : Controller
     {
         public readonly ApplicationDbContext db = new ApplicationDbContext();
+
+        //IList<NhaTro> n = new List<NhaTro>() 
+        //{
+        //    var nhanvien = (from s in _db.NHANVIENs select s).ToList();
+        //};                
         [HttpGet]
         // GET: NhaTro
         public ActionResult Index(int ?page)
         {
+            var total = db.NhaTros
+                .Select(a => a.IDNha)
+                .ToList().Count;
+            ViewBag.total = total;
             int pageNumber = (page ?? 1);
             int pageSize = 10;
             return View(db.NhaTros.ToList().OrderBy(n => n.IDNha).ToPagedList(pageNumber, pageSize));
         }
-
+        
         [HttpGet]
         // GET: NhaTro/Details/5
         public ActionResult Details(int id)

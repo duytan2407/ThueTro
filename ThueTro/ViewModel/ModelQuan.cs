@@ -11,7 +11,7 @@ namespace ThueTro.ViewModel
         public string ID { get; set; }
         public string DiaDiem { get; set; }
         public IEnumerable<DiaDiem> DiaDiems { get; set; }
-
-
+        public IEnumerable<NhaTro> Listnhatro { get; set; }
+        public IList<NhaTro> ListHomePage { get; set; }
     }
 }

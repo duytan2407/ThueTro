@@ -880,7 +880,7 @@ ol {
   height: 100%;
 }
 
-@media only screen and (min-width: 380px) and (max-width: 667px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 450px;
   }
@@ -1991,7 +1991,7 @@ ol {
 
 .hero-area .hero-text h2 {
   color: #fff;
-  font-size: 45px;
+  font-size: 60px;
   line-height: 60px;
   font-weight: 600;
   margin-bottom: 25px;
@@ -1999,17 +1999,7 @@ ol {
   position: relative;
 }
 
-    .hero-area .hero-text h2::before {
-        position: absolute;
-        content: "";
-        left: 50%;
-        bottom: -2px;
-        height: 4px;
-        width: 60px;
-        margin-left: -30px;
-        background: #009688;
-        border-radius: 10px;
-    }
+
 
 .hero-area .hero-text p {
   color: #ddd;
@@ -4392,7 +4382,7 @@ blockquote .shape {
         color: #fff;
         text-align: center;
         border-radius: 50%;
-        border: 6px solid #b29cfb;
+        border: 6px solid #009688;
         display: inline-block;
         margin-bottom: 25px;
         font-weight: 700;
@@ -4714,14 +4704,14 @@ blockquote .shape {
     margin-top: 30px;
   }
 
-  .how-works .single-work .serial {
-    height: 70px;
-    width: 70px;
-    line-height: 60px;
-    border: 4px solid #b29cfb;
-    margin-bottom: 25px;
-    font-size: 22px;
-  }
+    .how-works .single-work .serial {
+        height: 70px;
+        width: 70px;
+        line-height: 60px;
+        border: 4px solid #009688;
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
 
   .how-works .single-work h3 {
     font-size: 20px;
@@ -5189,14 +5179,14 @@ blockquote .shape {
     margin-top: 30px;
   }
 
-  .how-works .single-work .serial {
-    height: 70px;
-    width: 70px;
-    line-height: 60px;
-    border: 4px solid #b29cfb;
-    margin-bottom: 25px;
-    font-size: 22px;
-  }
+    .how-works .single-work .serial {
+        height: 70px;
+        width: 70px;
+        line-height: 60px;
+        border: 4px solid #009688;
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
 
   .how-works .single-work h3 {
     font-size: 20px;

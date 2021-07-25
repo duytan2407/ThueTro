@@ -34,53 +34,51 @@
 <h4>Tổng số nhà trọ hiện có: @ViewBag.total</h4>
 <table class="table" border="1">
     <tr>
-    </tr>
-    <tr>
-        <th style="width:5%; max-width: 100%; font-weight:bolder">STT</th>
-        <th style="width:11%; max-width: 100%; font-weight:bolder">Tên đường</th>
-        <th style="width:5%; max-width: 100%; font-weight:bolder">Diện tích</th>
-        <th style="width:5%; max-width: 100%; font-weight:bolder">Tên chủ nhà</th>
-        <th style="width:8%; max-width: 100%; font-weight:bolder">SDT liên hệ</th>
-        <th style="width:16%; max-width: 100%; font-weight:bolder">Chi tiết nhà</th>
-        <th style="width:16%; max-width: 100%; font-weight:bolder">Giới thiệu</th>
-        <th style="width:5%; max-width: 100%; font-weight:bolder">Giá</th>
-        <th style="width:14%; max-width: 100%; font-weight:bolder">Ảnh</th>
-        <th style="width:5%; max-width: 100%; font-weight:bolder">Quận</th>
-        <th style="width:10%; max-width: 100%; font-weight:bolder">Chức năng</th>
+        <th style="width:5%; max-width: 100%; font-weight:bolder; text-align: center; vertical-align: middle">STT</th>
+        <th style="width:11%; max-width: 100%; font-weight:bolder; text-align: center; vertical-align: middle">Tên đường</th>
+        <th style="width:5%; max-width: 100%; font-weight:bolder; text-align: center; vertical-align: middle">Diện tích</th>
+        <th style="width:5%; max-width: 100%; font-weight:bolder; text-align: center; vertical-align: middle">Tên chủ nhà</th>
+        <th style="width:8%; max-width: 100%; font-weight:bolder; text-align: center; vertical-align: middle">SDT liên hệ</th>
+        <th style="width:16%; max-width: 100%; font-weight:bolder; text-align: center; vertical-align: middle">Chi tiết nhà</th>
+        <th style="width:16%; max-width: 100%; font-weight:bolder; text-align: center; vertical-align: middle">Giới thiệu</th>
+        <th style="width:5%; max-width: 100%; font-weight:bolder; text-align: center; vertical-align: middle">Giá</th>
+        <th style="width:14%; max-width: 100%; font-weight:bolder; text-align: center; vertical-align: middle">Ảnh</th>
+        <th style="width:5%; max-width: 100%; font-weight:bolder; text-align: center; vertical-align: middle">Quận</th>
+        <th style="width:10%; max-width: 100%; font-weight:bolder; text-align: center; vertical-align: middle">Chức năng</th>
     </tr>
 
     @foreach (var item in Model)
     {
         <tr>
-            <td>
+            <td style="text-align: center; vertical-align: middle">
                 @Html.DisplayFor(modelItem => item.IDNha)
             </td>
-            <td>
+            <td style="text-align: center; vertical-align: middle">
                 @Html.DisplayFor(modelItem => item.Tenduong)
             </td>
-            <td>
+            <td style="text-align: center; vertical-align: middle">
                 @Html.DisplayFor(modelItem => item.DienTich)
             </td>
-            <td>
+            <td style="text-align: center; vertical-align: middle">
                 @Html.DisplayFor(modelItem => item.TenChuNha)
             </td>
-            <td>
+            <td style="text-align: center; vertical-align: middle">
                 @Html.DisplayFor(modelItem => item.SDT)
             </td>
-            <td>
+            <td style="text-align: center; vertical-align: middle">
                 @Truncate(item.CTNha, 70)
             </td>
-            <td>
+            <td style="text-align: center; vertical-align: middle">
                 @Truncate(item.GioiThieu, 70)
             </td>
-            <td>
+            <td style="text-align: center; vertical-align: middle">
                 @Html.DisplayFor(modelItem => item.Gia)
             </td>
             <td>
                 <img src="@Url.Content("~/Content/HinhAnh/" + item.image)" style="height:150px; width:150px;" />
                 @*<img src="@Url.Content(Model.image)" style="height:150px; width:150px; margin:10px;"/>*@
             </td>
-            <td>
+            <td style="text-align: center; vertical-align: middle">
                 @Html.DisplayFor(modelItem => item.DiaDiemIdQuan)
             </td>
             <td>

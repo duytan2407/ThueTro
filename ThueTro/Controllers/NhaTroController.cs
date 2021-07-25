@@ -22,7 +22,9 @@ namespace ThueTro.Controllers
         //    var nhanvien = (from s in _db.NHANVIENs select s).ToList();
         //};                
         [HttpGet]
+        [Authorize(Roles ="Admin")]
         // GET: NhaTro
+
         public ActionResult Index(int ?page)
         {
             var total = db.NhaTros
@@ -64,6 +66,7 @@ namespace ThueTro.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ValidateInput(false)]
+        [Authorize]
         public ActionResult Create(NhaTro nhatro, HttpPostedFileBase anh)
         {
             ViewBag.DiaDiemIdQuan = new SelectList(db.DiaDiems, "IDQuan", "TenQuan");
